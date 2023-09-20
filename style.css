@@ -1,0 +1,271 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    font-size: 14px;
+}
+
+.custom-hr {
+    width: 50%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(124, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    ;
+}
+
+header .info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    height: 20vh;
+}
+
+header .info-text h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+header .info-text h3 {
+    font-size: 2rem;
+    width: 60%;
+}
+
+header .info-text .scroll {
+    color: white;
+    transform: translate(1, -50%);
+    transition: all 0.5s;
+}
+
+header .info-text .scroll:hover {
+    opacity: 0.7;
+}
+
+#about, 
+#features, 
+#hobbies, 
+#studies, 
+#professional-experience 
+{
+    background-color: rgb(124, 0, 0);
+    padding: 40px;
+}
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.header .header-button {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+
+
+.header .header-button:hover {
+    border-color: white;
+    box-shadow: none;
+}
+
+.header .header-button:active {
+    transform: scale(0.90);
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    color: white;
+}
+
+.about-card:hover {
+    border-color: white;
+    box-shadow: none;
+}
+
+.about-card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-card .info i {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+.about-card .info h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-card .info p {
+    color: #ccc;
+    font-size: 1.rem;
+    line-height: 1.8rem;
+    text-align: center; 
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.custom-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 350px;
+    padding: 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    color: white;
+}
+
+.custom-card:hover, .carousel-card:hover {
+    border-color: white;
+    box-shadow: none;
+}
+
+.custom-card .info, .carousel-card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-card .info i, .carousel-card .info i {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+.custom-card .info h1, .custom-carousel.info h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.custom-card .info p, .carousel-card .info p {
+    color: #ccc;
+    font-size: 1.rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+#carousel-wrapper {
+    background-color: rgb(124, 0, 0);
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 10rem;
+    width: 5%;
+    border: 1px solid transparent;
+    display: flex;
+
+}
+
+.carousel-item a {
+    border-color: white;
+    border: 1px solid transparent;
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+.footer {
+    background-color: rgb(124, 0, 0);
+    text-align: center;
+    color: white;
+}
+
+.scroll-top {
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(124, 0, 0);
+    border: 1px solid transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+    padding: 16px 18px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.scroll-top:hover {
+    border-color: white;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 720px) {
+    header .info-text h1 {
+        font-size: 4rem;
+    }
+    
+    header .info-text h3 {
+        font-size: 1.1rem;
+    }
+
+    .custom-card {
+        min-width: none;
+    }
+}
