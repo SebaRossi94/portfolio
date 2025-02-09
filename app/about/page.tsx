@@ -1,33 +1,52 @@
-"use client"
-import { useTranslation } from "react-i18next"
-import { Typography, Container, Box, Link, IconButton, LinearProgress, Grid2 } from "@mui/material"
-import { motion } from "framer-motion"
-import { Email, LinkedIn, GitHub, SportsSoccer, MusicNote, SportsEsports } from "@mui/icons-material"
-import { useWindowSize } from "../hooks/useWindowSize"
-import { Grid2X2 } from "lucide-react"
+"use client";
+import { useTranslation } from "react-i18next";
+import {
+  Typography,
+  Container,
+  Box,
+  Link,
+  IconButton,
+  Rating,
+} from "@mui/material";
+import Grid from "@mui/material/Grid2";
+import SquareIcon from "@mui/icons-material/Square";
+import SquareOutlinedIcon from "@mui/icons-material/SquareOutlined";
+import { motion } from "framer-motion";
+import {
+  Email,
+  LinkedIn,
+  GitHub,
+  SportsSoccer,
+  MusicNote,
+  SportsEsports,
+} from "@mui/icons-material";
+import { useWindowSize } from "../hooks/useWindowSize";
 
 export default function About() {
-  const { t } = useTranslation()
-  const { width } = useWindowSize()
+  const { t } = useTranslation();
+  const { width } = useWindowSize();
 
-  const isMobile = width !== undefined && width <= 768
+  const isMobile = width !== undefined && width <= 768;
 
   const socialItems = [
     { icon: <Email />, link: "mailto:seba.rossi.94@gmail.com" },
-    { icon: <LinkedIn />, link: "https://www.linkedin.com/in/sebastian-rossi-grad" },
+    {
+      icon: <LinkedIn />,
+      link: "https://www.linkedin.com/in/sebastian-rossi-grad",
+    },
     { icon: <GitHub />, link: "https://github.com/SebaRossi94" },
-  ]
+  ];
 
   const languages = [
-    { name: "Spanish", level: 100, proficiency: t("about.languages.native") },
-    { name: "English", level: 80, proficiency: t("about.languages.advanced") },
-  ]
+    { name: "Spanish", level: 5, proficiency: t("about.languages.native") },
+    { name: "English", level: 4, proficiency: t("about.languages.advanced") },
+  ];
 
   const hobbies = [
     { name: "Soccer", icon: <SportsSoccer /> },
     { name: "Music (Guitar & Piano)", icon: <MusicNote /> },
     { name: "Gaming", icon: <SportsEsports /> },
-  ]
+  ];
 
   return (
     <Container
@@ -41,15 +60,25 @@ export default function About() {
       }}
     >
       <Box sx={{ textAlign: isMobile ? "center" : "left" }}>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <Typography variant={isMobile ? "h3" : "h2"} component="h1" gutterBottom>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Typography
+            variant={isMobile ? "h3" : "h2"}
+            component="h1"
+            gutterBottom
+          >
             {t("about.title")}
           </Typography>
           <Typography variant="body1" paragraph>
             {t("about.description")}
           </Typography>
 
-          <Box sx={{ my: 4, display: "flex", justifyContent: "center", gap: 2 }}>
+          <Box
+            sx={{ my: 4, display: "flex", justifyContent: "center", gap: 2 }}
+          >
             {socialItems.map((item, index) => (
               <IconButton
                 key={index}
@@ -73,7 +102,18 @@ export default function About() {
                 <Typography variant="body1">
                   {lang.name}: {lang.proficiency}
                 </Typography>
-                <LinearProgress variant="determinate" value={lang.level} sx={{ height: 8, borderRadius: 4 }} />
+                <Rating
+                  name="read-only"
+                  value={lang.level}
+                  readOnly
+                  icon={<SquareIcon />}
+                  emptyIcon={<SquareOutlinedIcon />}
+                  sx={{
+                    "& .MuiRating-iconFilled": {
+                      color: (t) => t.palette.secondary.main,
+                    },
+                  }}
+                />
               </Box>
             ))}
           </Box>
@@ -82,20 +122,21 @@ export default function About() {
             <Typography variant="h5" gutterBottom>
               {t("about.hobbies")}
             </Typography>
-            <Grid2 container spacing={2} justifyContent={"center"}>
+            <Grid container spacing={2} justifyContent={"center"}>
               {hobbies.map((hobby, index) => (
-                <Grid2 item key={index} xs={4} sm={3} md={2}>
+                <Grid key={index} size={{ xs: 4, sm: 3, md: 2 }}>
                   <Box sx={{ textAlign: "center" }}>
-                    <IconButton sx={{ fontSize: isMobile ? "1.5rem" : "2rem" }}>{hobby.icon}</IconButton>
+                    <IconButton sx={{ fontSize: isMobile ? "1.5rem" : "2rem" }}>
+                      {hobby.icon}
+                    </IconButton>
                     <Typography variant="body2">{hobby.name}</Typography>
                   </Box>
-                </Grid2>
+                </Grid>
               ))}
-            </Grid2>
+            </Grid>
           </Box>
         </motion.div>
       </Box>
     </Container>
-  )
+  );
 }
-
