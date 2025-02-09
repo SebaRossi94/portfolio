@@ -59,7 +59,7 @@ export default function About() {
         justifyContent: "center",
       }}
     >
-      <Box sx={{ textAlign: isMobile ? "center" : "left" }}>
+      <Box sx={{ textAlign: "center" }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

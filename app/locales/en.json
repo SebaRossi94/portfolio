@@ -22,7 +22,18 @@
     "hobbies": "Hobbies"
   },
   "education": {
-    "title": "Education"
+    "title": "Education",
+    "list": [
+      {
+        "title": "Electronic Engineering",
+        "subtitle": "Universidad Nacional de La Plata (UNLP), La Plata, Buenos Aires, Argentina | 2013 - 2018"
+      },
+      {
+        "title": "First Certificate - B2",
+        "subtitle": "University of Cambridge ESOL"
+      }
+    ],
+    "close": "Close"
   },
   "experience": {
     "title": "Professional Experience",
@@ -89,16 +100,49 @@
     "title": "Courses",
     "list": [
       {
-        "title": "Advanced Python Programming",
-        "description": "In-depth course covering advanced Python concepts including decorators, generators, and metaclasses."
+        "title": "IPv6 Basic - 3rd Edition 2019"
       },
       {
-        "title": "React and Redux Masterclass",
-        "description": "Comprehensive course on building scalable web applications with React and Redux."
+        "title": "IPv6 Advanced - 1st Edition 2019"
       },
       {
-        "title": "Docker and Kubernetes in Practice",
-        "description": "Hands-on course on containerization with Docker and orchestration with Kubernetes."
+        "title": "Introductory Security Networks Course"
+      },
+      {
+        "title": "6.00.1x: Introduction to Computing and Programming in Python",
+        "link": "https://courses.edx.org/certificates/f29dd0e5dc894bcf90b80abbe86300d9"
+      },
+      {
+        "title": "Neural Networks and Deep Learning",
+        "link": "https://www.coursera.org/account/accomplishments/verify/NW44XRNGR29L"
+      },
+      {
+        "title": "Learn Parallel Programming with Python",
+        "link": "https://ude.my/UC-8b982fd2-39f7-4a79-9b4e-78034cfbea82"
+      },
+      {
+        "title": "Improving Deep Neural Networks: Hyperparameters, Regularization, and Optimization",
+        "link": "https://www.coursera.org/account/accomplishments/verify/3VU4QL82GYR6"
+      },
+      {
+        "title": "Structuring Machine Learning Projects",
+        "link": "https://www.coursera.org/account/accomplishments/verify/FQNGEAYYVUUK"
+      },
+      {
+        "title": "Sequence Models",
+        "link": "https://www.coursera.org/account/accomplishments/verify/SGZUMTP27ADM"
+      },
+      {
+        "title": "Convolutional Neural Networks",
+        "link": "https://www.coursera.org/account/accomplishments/verify/HXR3YTVFA5AX"
+      },
+      {
+        "title": "Algorithms and Data Structures in Python",
+        "link": "https://www.udemy.com/certificate/UC-3837a3e5-37ef-4e6a-a92a-10246b16e659/"
+      },
+      {
+        "title": "Advanced Algorithms and Data Structures in Python",
+        "link": "https://www.udemy.com/certificate/UC-bc8c3623-e3c4-46c7-81c6-9d49b4c443a6/"
       }
     ],
     "close": "Close"
@@ -129,14 +173,17 @@
       "DevOps": [
         "Docker",
         "Kubernetes",
-        "GitLab CI/CD",
+        "GitHub CI/CD",
         "GCP",
         "Nginx"
       ],
       "Testing": [
         "Pytest",
         "Unittest",
-        "Jest"
+        "Sinon",
+        "Chai",
+        "nock",
+        "Locust"
       ],
       "Other": [
         "Git",

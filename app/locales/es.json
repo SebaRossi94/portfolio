@@ -88,16 +88,49 @@
     "title": "Cursos",
     "list": [
       {
-        "title": "Programación Avanzada en Python",
-        "description": "Curso en profundidad que cubre conceptos avanzados de Python incluyendo decoradores, generadores y metaclases."
+        "title": "IPv6 Básico - 3ra. Edición 2019"
       },
       {
-        "title": "Masterclass de React y Redux",
-        "description": "Curso completo sobre la construcción de aplicaciones web escalables con React y Redux."
+        "title": "Curso de IPv6 Avanzado - 1ra. Edición del año 2019"
       },
       {
-        "title": "Docker y Kubernetes en la Práctica",
-        "description": "Curso práctico sobre containerización con Docker y orquestación con Kubernetes."
+        "title": "Curso Introductorio de seguridad en redes"
+      },
+      {
+        "title": "6.00.1x: Introducción a la ciencia de computacion y programación en Python",
+        "link": "https://courses.edx.org/certificates/f29dd0e5dc894bcf90b80abbe86300d9"
+      },
+      {
+        "title": "Redes neuronales y deep learning",
+        "link": "https://www.coursera.org/account/accomplishments/verify/NW44XRNGR29L"
+      },
+      {
+        "title": "Aprenda programacion paralela con Python",
+        "link": "https://ude.my/UC-8b982fd2-39f7-4a79-9b4e-78034cfbea82"
+      },
+      {
+        "title": "Mejorando redes neuronales profundas: hiperparametros, regularización y optimización",
+        "link": "https://www.coursera.org/account/accomplishments/verify/3VU4QL82GYR6"
+      },
+      {
+        "title": "Estructurando proyectos de Machine Learning",
+        "link": "https://www.coursera.org/account/accomplishments/verify/FQNGEAYYVUUK"
+      },
+      {
+        "title": "Modelos de secuencia",
+        "link": "https://www.coursera.org/account/accomplishments/verify/SGZUMTP27ADM"
+      },
+      {
+        "title": "Redes neuronales convlucionales",
+        "link": "https://www.coursera.org/account/accomplishments/verify/HXR3YTVFA5AX"
+      },
+      {
+        "title": "Algoritmos y estructuras de datos en Python",
+        "link": "https://www.udemy.com/certificate/UC-3837a3e5-37ef-4e6a-a92a-10246b16e659/"
+      },
+      {
+        "title": "Algoritmos avanzados y estructuras de datos en Python",
+        "link": "https://www.udemy.com/certificate/UC-bc8c3623-e3c4-46c7-81c6-9d49b4c443a6/"
       }
     ],
     "close": "Cerrar"
@@ -128,14 +161,17 @@
       "DevOps": [
         "Docker",
         "Kubernetes",
-        "GitLab CI/CD",
+        "GitHub CI/CD",
         "GCP",
         "Nginx"
       ],
       "Pruebas": [
         "Pytest",
         "Unittest",
-        "Jest"
+        "Sinon",
+        "Chai",
+        "nock",
+        "Locust"
       ],
       "Otros": [
         "Git",

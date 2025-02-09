@@ -16,12 +16,12 @@ export default function Stack() {
     <Container maxWidth="md" sx={{ py: 4 }}>
       <Box sx={{ textAlign: isMobile ? "center" : "left" }}>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <Typography variant={isMobile ? "h3" : "h2"} component="h1" gutterBottom>
+          <Typography variant={isMobile ? "h3" : "h2"} component="h1" gutterBottom textAlign="center">
             {t("stack.title")}
           </Typography>
           {Object.entries(stack).map(([category, tools]) => (
             <Box key={category} sx={{ mb: 4 }}>
-              <Typography variant="h5" gutterBottom>
+              <Typography variant="h5" gutterBottom textAlign="center">
                 {category}
               </Typography>
               <Grid container spacing={2}>

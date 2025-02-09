@@ -16,8 +16,11 @@ import {
   Button,
   List,
   ListItem,
+  IconButton,
+  Tooltip,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import LaunchIcon from "@mui/icons-material/Launch";
 import { motion, AnimatePresence } from "framer-motion";
 import { useWindowSize } from "../hooks/useWindowSize";
 
@@ -39,7 +42,8 @@ export default function Content({
   }) as Array<{
     title: string;
     subtitle?: string;
-    description: string | Array<string>;
+    link?: string;
+    description?: string | Array<string>;
     close: string;
   }>;
 
@@ -84,14 +88,27 @@ export default function Content({
             variant={isMobile ? "h3" : "h2"}
             component="h1"
             gutterBottom
+            textAlign="center"
           >
             {t(title)}
           </Typography>
           <Grid container spacing={3}>
             {cardContents.map((card, index) => (
-              <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
-                <Card>
-                  <CardActionArea onClick={() => setSelectedCard(index)}>
+              <Grid
+                size={
+                  cardContents.length > 3
+                    ? { xs: 12, sm: 6, md: 4 }
+                    : { xs: 12 }
+                }
+                key={index}
+                alignItems="center"
+                textAlign="center"
+              >
+                <Card sx={{ height: "100%" }}>
+                  <CardActionArea
+                    sx={{ height: "100%" }}
+                    onClick={() => setSelectedCard(index)}
+                  >
                     <CardContent>
                       <Typography variant="h6" component="div">
                         {card.title}
@@ -119,7 +136,19 @@ export default function Content({
             fullWidth
             maxWidth="sm"
           >
-            <DialogTitle>{cardContents[selectedCard].title}</DialogTitle>
+            <DialogTitle>
+              {cardContents[selectedCard].title}{" "}
+              {cardContents[selectedCard].link && (
+                <Tooltip title="Go to source">
+                  <IconButton
+                    aria-label="delete"
+                    onClick={() => window.open(cardContents[selectedCard].link)}
+                  >
+                    <LaunchIcon />
+                  </IconButton>
+                </Tooltip>
+              )}
+            </DialogTitle>
             <DialogContent>
               {renderDescription(cardContents[selectedCard].description)}
             </DialogContent>
