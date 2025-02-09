@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "courses": "Courses",
+    "stack": "Stack"
+  },
+  "home": {
+    "welcome": "Welcome to My Portfolio",
+    "subtitle": "Fullstack Developer | Electronic Engineer"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Fullstack developer oriented towards back-end. Meticulous, persistent, self-motivated team player, always eager to learn and grow personally and professionally. Advanced English both written and spoken.",
+    "languages": {
+      "title": "Languages",
+      "native": "Native",
+      "advanced": "Advanced"
+    },
+    "hobbies": "Hobbies"
+  },
+  "education": {
+    "title": "Education"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "magoya": {
+      "company": "Magoya",
+      "position": "FullStack Developer",
+      "period": "November 2023 - Today",
+      "intent": {
+        "title": "Intent",
+        "details": [
+          "Stack: Flask, Docker, GitLab, Pytest, PostgreSQL",
+          "Part of a 3-man team that created a full set of microservices for a REST API gateway in Flask framework including authentication through JWT, and connection to OAuth2.0 apps with the goal of centralizing, and normalizing several providers data",
+          "Helped dockerizing each microservice, design and implement database using Postgres, implement CI/CD using GitLab and GitOps",
+          "Worked developing features from scratch as well as improving existing code and reviewing peer MR's",
+          "Applied Celery tasks for periodic tasks as well as data ingestion tasks",
+          "Created testing for project using Unittest, Pytest, Mocking, with >95% coverage, linting and flake",
+          "Implemented automated Swagger docs from code using Apispec library"
+        ]
+      }
+    },
+    "cultivio": {
+      "company": "Cultivio",
+      "position": "FullStack Developer",
+      "period": "June 2023 - November 2023",
+      "details": [
+        "Stack: Django, React, Typescript, Docker, Github, FastAPI, PostgreSQL, Node.js, Express, GCP, Grafana, Prometheus, Kong, Kubernetes",
+        "Worked on an existing productive project adding new features, fixing bugs, improving existing code, reviewing peers PR's, and making regular deployments to production using GCP",
+        "Regular deployment of code in all environments in GCP using Kubernetes. Services, Ingress, Secrets & ConfigMaps, CronJobs, etc.",
+        "Worked both on backend tasks using Django and DRF as well as front end tasks using React",
+        "Implemented oAuth2 auth server from scratch",
+        "Worked on data analytics updating data fetching from backend and front end and creating reports on Looker for project insights",
+        "Implemented Backend cache with improvements up to 3 times on loading time",
+        "Implemented unit tests in various repositories from scratch. Python: pytest, unittest, pytest-mock. Express: nock, proxyquire, chai, sinon, etc.",
+        "Upgraded CI/CD integration by applying coverage thresholds as well as security leaks checking with gitleaks",
+        "Deployed intro production using GCP a metrics solution using Prometheus and Grafana for all running microservices with real-time alerts and dashboards as well as implementing prometheus instrumentation on each microservice",
+        "Implemented twilio integration from scratch for automated whatsapp notifications"
+      ]
+    },
+    "fullstackLabs": {
+      "company": "Fullstack Labs",
+      "position": "Mid-Level Software Engineer",
+      "period": "April 2022 - June 2023",
+      "details": [
+        "Part of a 4-man team working both on independent as well as coordinated tasks",
+        "Helped update a fully working Django application from Python 2.7 to Python 3.10 and Django 2.1 to 4.0. Helped Dockerizing the existing app from scratch.",
+        "Worked on different Django applications solving bugs, creating unit tests, adding new features and optimizing and cleaning existing code",
+        "Developed a Django application from scratch. Focused on API REST endpoints development as well as integration with Facebook Graph API. Designed database tables and helped dockerize the app. Created several unit tests for endpoints as well. Worked also on Javascript, HTML, CSS, PostgreSQL. Worked also with Celery and redis in this project for task automation and session implementations.",
+        "Generated API Endpoints for data visualization over different types of charts",
+        "Collaborated on tickets and new features for React application"
+      ]
+    },
+    "rocstarSYT": {
+      "company": "Rocstar/SYT",
+      "position": "Software Engineer",
+      "period": "April 2019 - April 2022",
+      "details": [
+        "Worked on several aspects of the company given the small size, not only on software development but also on group handling and knowledge documentation and transmission",
+        "Helped set up SimpleSamlPHP web server as Identity provider for SSO on different Stream applications. Focused mainly on generating SQL queries for both authorization and authentication of users through API's endpoints",
+        "Individually created a Django app from scratch and deployed it on a local hosted server both to testing env as well as production, handled basics of HTML, CSS and Javascript",
+        "Worked on several integrations between third party API's software providers and local services using Python generating automated periodic notifications of statistics and deployed such integrations on self hosted servers using Debian cron tasks",
+        "Helped document and translate third party providers services for company's usage. Translated knowledge to operations team",
+        "Created a unified CMD tool in Python to bulk handle repetitive tasks using third party software providers API's. Generated documentation and translated knowledge to operations team",
+        "Created software for bulk automatic publishing of iOS and Android apps on both AppStore as well as Android Store using Ruby's Fastlane framework combined with bash scripts and Python scripts. Generated documentation and translated knowledge to operations team",
+        "Helped improving a self made CDN configuration based on Nginx across the entire country (Argentina) by adding load balancers, VPN's and logic for failures",
+        "Acted as company representative with software providers coordinating tasks, follow ups and meetings to keep track of shared projects ensuring a smooth work environment between teams"
+      ]
+    }
+  },
+  "courses": {
+    "title": "Courses",
+    "list": [
+      {
+        "title": "Advanced Python Programming",
+        "description": "In-depth course covering advanced Python concepts including decorators, generators, and metaclasses."
+      },
+      {
+        "title": "React and Redux Masterclass",
+        "description": "Comprehensive course on building scalable web applications with React and Redux."
+      },
+      {
+        "title": "Docker and Kubernetes in Practice",
+        "description": "Hands-on course on containerization with Docker and orchestration with Kubernetes."
+      }
+    ],
+    "close": "Close"
+  },
+  "stack": {
+    "title": "Technology Stack",
+    "tools": {
+      "Backend": ["Python", "Django", "Flask", "FastAPI", "Node.js", "Express"],
+      "Frontend": ["React", "TypeScript", "JavaScript", "HTML", "CSS"],
+      "Databases": ["PostgreSQL", "MongoDB", "Redis"],
+      "DevOps": ["Docker", "Kubernetes", "GitLab CI/CD", "GCP", "Nginx"],
+      "Testing": ["Pytest", "Unittest", "Jest"],
+      "Other": ["Git", "RESTful APIs", "GraphQL", "Celery"]
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
+
