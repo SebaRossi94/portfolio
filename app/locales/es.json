@@ -22,7 +22,20 @@
     "hobbies": "Pasatiempos"
   },
   "education": {
-    "title": "Educación"
+    "title": "Educación",
+    "list": [
+      {
+        "title": "Ingenieria Electrónica",
+        "subtitle": "Universidad Nacional de La Plata (UNLP), La Plata, Buenos Aires, Argentina | 2013 - 2018",
+        "description": ["Promedio: 7,85", "Ranking: 4/60"]
+      },
+      {
+        "title": "First Certificate - B2",
+        "subtitle": "Universidad de cambridge ESOL",
+        "description": ["Grade: C"]
+      }
+    ],
+    "close": "Close"
   },
   "experience": {
     "title": "Experiencia Profesional",
