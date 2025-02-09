@@ -26,70 +26,63 @@
   },
   "experience": {
     "title": "Experiencia Profesional",
-    "magoya": {
-      "company": "Magoya",
-      "position": "Desarrollador FullStack",
-      "period": "Noviembre 2023 - Actualidad",
-      "intent": {
-        "title": "Propósito",
-        "details": [
-          "Stack: Flask, Docker, GitLab, Pytest, PostgreSQL",
-          "Parte de un equipo de 3 personas que creó un conjunto completo de microservicios para una puerta de enlace API REST en el framework Flask, incluyendo autenticación a través de JWT y conexión a aplicaciones OAuth2.0 con el objetivo de centralizar y normalizar datos de varios proveedores",
-          "Ayudó a dockerizar cada microservicio, diseñar e implementar la base de datos usando Postgres, implementar CI/CD usando GitLab y GitOps",
-          "Trabajó desarrollando características desde cero, así como mejorando el código existente y revisando MR de compañeros",
-          "Aplicó tareas Celery para tareas periódicas y tareas de ingestión de datos",
-          "Creó pruebas para el proyecto usando Unittest, Pytest, Mocking, con >95% de cobertura, linting y flake",
-          "Implementó documentación automatizada de Swagger desde el código usando la biblioteca Apispec"
+    "list": [
+      {
+        "title": "Magoya",
+        "subtitle": "Desarrollador FullStack | Noviembre 2023 - Actualidad",
+        "description": {
+          "Intent": [
+            "Stack: Flask, Docker, GitLab, Pytest, PostgreSQL",
+            "Parte de un equipo de 3 personas que creó un conjunto completo de microservicios para una puerta de enlace API REST en el framework Flask, incluyendo autenticación a través de JWT y conexión a aplicaciones OAuth2.0 con el objetivo de centralizar y normalizar datos de varios proveedores",
+            "Ayudó a dockerizar cada microservicio, diseñar e implementar la base de datos usando Postgres, implementar CI/CD usando GitLab y GitOps",
+            "Trabajó desarrollando características desde cero, así como mejorando el código existente y revisando MR de compañeros",
+            "Aplicó tareas Celery para tareas periódicas y tareas de ingestión de datos",
+            "Creó pruebas para el proyecto usando Unittest, Pytest, Mocking, con >95% de cobertura, linting y flake",
+            "Implementó documentación automatizada de Swagger desde el código usando la biblioteca Apispec"
+          ],
+          "Cultivio": [
+            "Stack: Django, React, Typescript, Docker, Github, FastAPI, PostgreSQL, Node.js, Express, GCP, Grafana, Prometheus, Kong, Kubernetes",
+            "Trabajó en un proyecto productivo existente agregando nuevas características, corrigiendo errores, mejorando el código existente, revisando PR de compañeros y realizando despliegues regulares a producción usando GCP",
+            "Despliegue regular de código en todos los entornos en GCP usando Kubernetes. Servicios, Ingress, Secrets & ConfigMaps, CronJobs, etc.",
+            "Trabajó tanto en tareas de backend usando Django y DRF como en tareas de frontend usando React",
+            "Implementó servidor de autenticación oAuth2 desde cero",
+            "Trabajó en análisis de datos actualizando la obtención de datos desde el backend y frontend y creando informes en Looker para obtener insights del proyecto",
+            "Implementó caché de Backend con mejoras de hasta 3 veces en el tiempo de carga",
+            "Implementó pruebas unitarias en varios repositorios desde cero. Python: pytest, unittest, pytest-mock. Express: nock, proxyquire, chai, sinon, etc.",
+            "Mejoró la integración de CI/CD aplicando umbrales de cobertura y verificación de fugas de seguridad con gitleaks",
+            "Desplegó en producción usando GCP una solución de métricas usando Prometheus y Grafana para todos los microservicios en ejecución con alertas en tiempo real y dashboards, así como implementando instrumentación de prometheus en cada microservicio",
+            "Implementó integración de twilio desde cero para notificaciones automatizadas de whatsapp"
+          ]
+        }
+      },
+      {
+        "title": "Fullstack Labs",
+        "subtitle": "Ingeniero de Software de Nivel Medio | Abril 2022 - Junio 2023",
+        "description": [
+          "Parte de un equipo de 4 personas trabajando tanto en tareas independientes como coordinadas",
+          "Ayudó a actualizar una aplicación Django completamente funcional de Python 2.7 a Python 3.10 y de Django 2.1 a 4.0. Ayudó a Dockerizar la aplicación existente desde cero.",
+          "Trabajó en diferentes aplicaciones Django resolviendo errores, creando pruebas unitarias, agregando nuevas características y optimizando y limpiando el código existente",
+          "Desarrolló una aplicación Django desde cero. Se enfocó en el desarrollo de endpoints API REST así como en la integración con Facebook Graph API. Diseñó tablas de base de datos y ayudó a dockerizar la aplicación. Creó varias pruebas unitarias para endpoints también. Trabajó también en Javascript, HTML, CSS, PostgreSQL. Trabajó también con Celery y redis en este proyecto para automatización de tareas e implementaciones de sesiones.",
+          "Generó Endpoints API para visualización de datos en diferentes tipos de gráficos",
+          "Colaboró en tickets y nuevas características para aplicación React"
+        ]
+      },
+      {
+        "title": "Rocstar/SYT",
+        "subtitle": "Ingeniero de Software | Abril 2019 - Abril 2022",
+        "description": [
+          "Trabajó en varios aspectos de la empresa dado el tamaño pequeño, no solo en desarrollo de software sino también en manejo de grupos y documentación y transmisión de conocimientos",
+          "Ayudó a configurar el servidor web SimpleSamlPHP como proveedor de identidad para SSO en diferentes aplicaciones de Stream. Se enfocó principalmente en generar consultas SQL tanto para autorización como para autenticación de usuarios a través de endpoints de API",
+          "Creó individualmente una aplicación Django desde cero y la desplegó en un servidor alojado localmente tanto para entorno de pruebas como de producción, manejó conceptos básicos de HTML, CSS y Javascript",
+          "Trabajó en varias integraciones entre proveedores de software de API de terceros y servicios locales usando Python generando notificaciones periódicas automatizadas de estadísticas y desplegó dichas integraciones en servidores autohospedados usando tareas cron de Debian",
+          "Ayudó a documentar y traducir servicios de proveedores de terceros para uso de la empresa. Tradujo conocimientos al equipo de operaciones",
+          "Creó una herramienta CMD unificada en Python para manejar en masa tareas repetitivas usando API de proveedores de software de terceros. Generó documentación y tradujo conocimientos al equipo de operaciones",
+          "Creó software para publicación automática en masa de aplicaciones iOS y Android tanto en AppStore como en Android Store usando el framework Fastlane de Ruby combinado con scripts bash y scripts Python. Generó documentación y tradujo conocimientos al equipo de operaciones",
+          "Ayudó a mejorar una configuración de CDN hecha a medida basada en Nginx en todo el país (Argentina) agregando balanceadores de carga, VPN y lógica para fallas",
+          "Actuó como representante de la empresa con proveedores de software coordinando tareas, seguimientos y reuniones para mantener el seguimiento de proyectos compartidos asegurando un ambiente de trabajo fluido entre equipos"
         ]
       }
-    },
-    "cultivio": {
-      "company": "Cultivio",
-      "position": "Desarrollador FullStack",
-      "period": "Junio 2023 - Noviembre 2023",
-      "details": [
-        "Stack: Django, React, Typescript, Docker, Github, FastAPI, PostgreSQL, Node.js, Express, GCP, Grafana, Prometheus, Kong, Kubernetes",
-        "Trabajó en un proyecto productivo existente agregando nuevas características, corrigiendo errores, mejorando el código existente, revisando PR de compañeros y realizando despliegues regulares a producción usando GCP",
-        "Despliegue regular de código en todos los entornos en GCP usando Kubernetes. Servicios, Ingress, Secrets & ConfigMaps, CronJobs, etc.",
-        "Trabajó tanto en tareas de backend usando Django y DRF como en tareas de frontend usando React",
-        "Implementó servidor de autenticación oAuth2 desde cero",
-        "Trabajó en análisis de datos actualizando la obtención de datos desde el backend y frontend y creando informes en Looker para obtener insights del proyecto",
-        "Implementó caché de Backend con mejoras de hasta 3 veces en el tiempo de carga",
-        "Implementó pruebas unitarias en varios repositorios desde cero. Python: pytest, unittest, pytest-mock. Express: nock, proxyquire, chai, sinon, etc.",
-        "Mejoró la integración de CI/CD aplicando umbrales de cobertura y verificación de fugas de seguridad con gitleaks",
-        "Desplegó en producción usando GCP una solución de métricas usando Prometheus y Grafana para todos los microservicios en ejecución con alertas en tiempo real y dashboards, así como implementando instrumentación de prometheus en cada microservicio",
-        "Implementó integración de twilio desde cero para notificaciones automatizadas de whatsapp"
-      ]
-    },
-    "fullstackLabs": {
-      "company": "Fullstack Labs",
-      "position": "Ingeniero de Software de Nivel Medio",
-      "period": "Abril 2022 - Junio 2023",
-      "details": [
-        "Parte de un equipo de 4 personas trabajando tanto en tareas independientes como coordinadas",
-        "Ayudó a actualizar una aplicación Django completamente funcional de Python 2.7 a Python 3.10 y de Django 2.1 a 4.0. Ayudó a Dockerizar la aplicación existente desde cero.",
-        "Trabajó en diferentes aplicaciones Django resolviendo errores, creando pruebas unitarias, agregando nuevas características y optimizando y limpiando el código existente",
-        "Desarrolló una aplicación Django desde cero. Se enfocó en el desarrollo de endpoints API REST así como en la integración con Facebook Graph API. Diseñó tablas de base de datos y ayudó a dockerizar la aplicación. Creó varias pruebas unitarias para endpoints también. Trabajó también en Javascript, HTML, CSS, PostgreSQL. Trabajó también con Celery y redis en este proyecto para automatización de tareas e implementaciones de sesiones.",
-        "Generó Endpoints API para visualización de datos en diferentes tipos de gráficos",
-        "Colaboró en tickets y nuevas características para aplicación React"
-      ]
-    },
-    "rocstarSYT": {
-      "company": "Rocstar/SYT",
-      "position": "Ingeniero de Software",
-      "period": "Abril 2019 - Abril 2022",
-      "details": [
-        "Trabajó en varios aspectos de la empresa dado el tamaño pequeño, no solo en desarrollo de software sino también en manejo de grupos y documentación y transmisión de conocimientos",
-        "Ayudó a configurar el servidor web SimpleSamlPHP como proveedor de identidad para SSO en diferentes aplicaciones de Stream. Se enfocó principalmente en generar consultas SQL tanto para autorización como para autenticación de usuarios a través de endpoints de API",
-        "Creó individualmente una aplicación Django desde cero y la desplegó en un servidor alojado localmente tanto para entorno de pruebas como de producción, manejó conceptos básicos de HTML, CSS y Javascript",
-        "Trabajó en varias integraciones entre proveedores de software de API de terceros y servicios locales usando Python generando notificaciones periódicas automatizadas de estadísticas y desplegó dichas integraciones en servidores autohospedados usando tareas cron de Debian",
-        "Ayudó a documentar y traducir servicios de proveedores de terceros para uso de la empresa. Tradujo conocimientos al equipo de operaciones",
-        "Creó una herramienta CMD unificada en Python para manejar en masa tareas repetitivas usando API de proveedores de software de terceros. Generó documentación y tradujo conocimientos al equipo de operaciones",
-        "Creó software para publicación automática en masa de aplicaciones iOS y Android tanto en AppStore como en Android Store usando el framework Fastlane de Ruby combinado con scripts bash y scripts Python. Generó documentación y tradujo conocimientos al equipo de operaciones",
-        "Ayudó a mejorar una configuración de CDN hecha a medida basada en Nginx en todo el país (Argentina) agregando balanceadores de carga, VPN y lógica para fallas",
-        "Actuó como representante de la empresa con proveedores de software coordinando tareas, seguimientos y reuniones para mantener el seguimiento de proyectos compartidos asegurando un ambiente de trabajo fluido entre equipos"
-      ]
-    }
+    ]
   },
   "courses": {
     "title": "Cursos",
@@ -112,16 +105,47 @@
   "stack": {
     "title": "Stack Tecnológico",
     "tools": {
-      "Backend": ["Python", "Django", "Flask", "FastAPI", "Node.js", "Express"],
-      "Frontend": ["React", "TypeScript", "JavaScript", "HTML", "CSS"],
-      "Bases de Datos": ["PostgreSQL", "MongoDB", "Redis"],
-      "DevOps": ["Docker", "Kubernetes", "GitLab CI/CD", "GCP", "Nginx"],
-      "Pruebas": ["Pytest", "Unittest", "Jest"],
-      "Otros": ["Git", "APIs RESTful", "GraphQL", "Celery"]
+      "Backend": [
+        "Python",
+        "Django",
+        "Flask",
+        "FastAPI",
+        "Node.js",
+        "Express"
+      ],
+      "Frontend": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "Bases de Datos": [
+        "PostgreSQL",
+        "MongoDB",
+        "Redis"
+      ],
+      "DevOps": [
+        "Docker",
+        "Kubernetes",
+        "GitLab CI/CD",
+        "GCP",
+        "Nginx"
+      ],
+      "Pruebas": [
+        "Pytest",
+        "Unittest",
+        "Jest"
+      ],
+      "Otros": [
+        "Git",
+        "APIs RESTful",
+        "GraphQL",
+        "Celery"
+      ]
     }
   },
   "footer": {
     "rights": "Todos los derechos reservados."
   }
 }
-
